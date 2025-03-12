@@ -118,28 +118,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DashBoard.cpp" />
-    <ClCompile Include="MyForm.cpp" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="Backlog.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
     <ClInclude Include="DashBoard.h">
       <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Home.h">
+      <FileType>CppControl</FileType>
     </ClInclude>
     <ClInclude Include="login.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="resource.h" />
+    <ClInclude Include="Manage_Tasks.h">
+      <FileType>CppControl</FileType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Backlog.resx">
+      <DependentUpon>Backlog.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DashBoard.resx">
       <DependentUpon>DashBoard.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Tasks.resx">
+      <DependentUpon>Manage_Tasks.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="To Do List.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Backlog.cpp" />
+    <ClCompile Include="Home.cpp" />
+    <ClCompile Include="Manage_Tasks.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

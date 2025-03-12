@@ -13,29 +13,41 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="MyForm.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DashBoard.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <Filter Include="Source Files\DashboardUCS">
+      <UniqueIdentifier>{36f1a92d-bdea-47a5-8fa9-f8d0ed2d892d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="login.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="DashBoard.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Backlog.h">
+      <Filter>Source Files\DashboardUCS</Filter>
+    </ClInclude>
+    <ClInclude Include="Home.h">
+      <Filter>Source Files\DashboardUCS</Filter>
+    </ClInclude>
+    <ClInclude Include="Manage_Tasks.h">
+      <Filter>Source Files\DashboardUCS</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="To Do List.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Backlog.cpp">
+      <Filter>Source Files\DashboardUCS</Filter>
+    </ClCompile>
+    <ClCompile Include="Home.cpp">
+      <Filter>Source Files\DashboardUCS</Filter>
+    </ClCompile>
+    <ClCompile Include="Manage_Tasks.cpp">
+      <Filter>Source Files\DashboardUCS</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
